@@ -19,18 +19,43 @@
             <fieldset class="form__contact">
                 <legend class="contact__legende">Informations de contact</legend>
                 <p>
-                <label for="prenom">Prénom</label>
-                <input type="text" id="prenom" name="prenom">
-                <label for="nom">Nom</label>       
-                <input type="text" id="nom" name="nom">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" id="prenom" name="prenom">
+                    <label for="nom">Nom</label>       
+                    <input type="text" id="nom" name="nom">
                 </p>
                 <p>
-                <label for="courriel">Courriel</label>
-                <input type="email" id="courriel" name="courriel">
+                    <label for="courriel">Courriel</label>
+                    <input type="email" id="courriel" name="courriel">
                 </p>
                 <p>
-                <label for="telephone">Téléphone</label>                                                        
-                <input type="tel" id="telephone" name="telephone">
+                    <label for="telephone">Téléphone</label>                                                        
+                    <input type="tel" id="telephone" name="telephone">
+                </p>
+            </fieldset>
+            <fieldset class="form__postale">
+                <legend class="postale__legende">Informatioins postales</legend>
+                <p>
+                    <label for="adresse">Adresse</label>
+                    <input type="text" id="adresse" name="adresse">
+                </p>
+                <p>
+                    <label for="pays">Pays</label>
+                    <select name="pays" id="pays">
+                        <option value="selectionner" selected="selected">-- Sélectionner --</option>
+                        <option value="canada">Canada</option>
+                        <option value="etatsunis">États-Unis</option>
+                    </select>
+                    <label for="province_etat">Province ou État</label>
+                    <select name="province_etat" id="province_etat">
+                        <option value="selectionner" selected="selected">-- Sélectionner --</option>
+                        <optgroup label="Canada">
+                        <option value="quebec">Québec</option>
+                        </optgroup>
+                        <optgroup label="États-Unis">
+                        <option value="newyork">New York</option>
+                        </optgroup>
+                    </select>                    
                 </p>
             </fieldset>
         </form>

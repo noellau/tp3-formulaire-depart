@@ -9,27 +9,46 @@
         <form action="" class="form" id="form">
             <fieldset class="form__format">
                 <legend class="format__legende">Fromat de la brochure</legend>
-                <input type="radio" id="imprime" name="imprime">
-                <label for="imprime"><img src="images/icon-file-print.svg" alt="">Imprimé</label>
-                <input type="radio" id="pdf" name="pdf">
-                <label for="pdf"><img src="images/icon-file-pdf.svg" alt="">PDF</label>
-                <input type="radio" id="epub" name="epub">
-                <label for="epub"><img src="images/icon-file-epub.svg" alt="">ePub</label>                                
+                <ul>
+                    <li>
+                        <input type="radio" id="imprime" name="format">
+                        <label for="imprime"><img src="images/icon-file-print.svg" alt="">Imprimé</label>  
+                    </li>
+                    <li>
+                        <input type="radio" id="pdf" name="format">
+                        <label for="pdf"><img src="images/icon-file-pdf.svg" alt="">PDF</label>  
+                    </li>
+                    <li>
+                        <input type="radio" id="epub" name="format">
+                        <label for="epub"><img src="images/icon-file-epub.svg" alt="">ePub</label>       
+                    </li>
+                </ul>
+                <p class="mesddage_erreur"></p>                           
             </fieldset>
             <fieldset class="form__contact">
                 <legend class="contact__legende">Informations de contact</legend>
                 <p>
                     <label for="prenom">Prénom</label>
+                </p>
+                <p>
                     <input type="text" id="prenom" name="prenom" required>
+                </p>   
+                <p> 
                     <label for="nom">Nom</label>       
+                </p>
+                <p>
                     <input type="text" id="nom" name="nom">
                 </p>
                 <p>
                     <label for="courriel">Courriel</label>
+                </p>
+                <p>
                     <input type="email" id="courriel" name="courriel" required>
                 </p>
                 <p>
-                    <label for="telephone">Téléphone</label>                                                        
+                    <label for="telephone">Téléphone</label>   
+                </p>
+                <p>
                     <input type="tel" id="telephone" name="telephone">
                 </p>
             </fieldset>
@@ -37,16 +56,24 @@
                 <legend class="postale__legende">Informatioins postales</legend>
                 <p>
                     <label for="adresse">Adresse</label>
+                </p>
+                <p>
                     <input type="text" id="adresse" name="adresse" required>
                 </p>
                 <p>
-                    <label for="pays">Pays</label>
+                    <p>
+                        <label for="pays">Pays</label>
+                    </p>
                     <select name="pays" id="pays" required>
                         <option value="selectionner" selected="selected">-- Sélectionner --</option>
                         <option value="canada">Canada</option>
                         <option value="etatsunis">États-Unis</option>
                     </select>
-                    <label for="province_etat">Province ou État</label>
+                </p>
+                <p>
+                    <p>
+                        <label for="province_etat">Province ou État</label>
+                    </p>                   
                     <select name="province_etat" id="province_etat" required>
                         <option value="selectionner" selected="selected">-- Sélectionner --</option>
                         <optgroup label="Canada">
@@ -56,6 +83,12 @@
                         <option value="newyork">New York</option>
                         </optgroup>
                     </select>                    
+                </p>
+                <p>
+                    <p>
+                        <label for="code_postal">Code postal</label>
+                    </p>                    
+                    <input type="text" id="code_postal" name="code_postal" required>
                 </p>
             </fieldset>
             <p>

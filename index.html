@@ -6,7 +6,7 @@
         <title>Commander une brochure gratuite</title>
     </head>
     <body>
-        <form action="" class="form" id="form">
+        <form action="index.html" class="form" id="form">
             <fieldset class="form__format">
                 <legend class="format__legende">Fromat de la brochure</legend>
                 <ul>
@@ -33,28 +33,28 @@
                 <p>
                     <input type="text" id="prenom" name="prenom" required>
                 </p>   
-                <p class="contact_champ-erreur-prenom"></p>
+                <p class="champ-erreur"></p>
                 <p> 
                     <label for="nom">Nom</label>       
                 </p>
                 <p>
                     <input type="text" id="nom" name="nom">
                 </p>
-                <p class="contact_champ-erreur-nom"></p>
+                <p class="champ-erreur"></p>
                 <p>
                     <label for="courriel">Courriel (exemple@domaine.com)</label>
                 </p>
                 <p>
                     <input type="email" id="courriel" name="courriel" required>
                 </p>
-                <p class="contact_champ-erreur-courriel"></p>
+                <p class="champ-erreur"></p>
                 <p>
                     <label for="telephone">Téléphone (514 555 0123)</label>   
                 </p>
                 <p>
                     <input type="tel" id="telephone" name="telephone">
                 </p>
-                <p class="contact_champ-erreur-telephone"></p>
+                <p class="champ-erreur"></p>
             </fieldset>
             <fieldset class="form__postale">
                 <legend class="postale__legende">Informatioins postales</legend>
@@ -64,24 +64,24 @@
                 <p>
                     <input type="text" id="adresse" name="adresse" required>
                 </p>
-                <p class="contact_champ-erreur-adresse"></p>
+                <p class="champ-erreur"></p>
                 <p>
                     <p>
                         <label for="pays">Pays</label>
                     </p>
                     <select name="pays" id="pays" required>
-                        <option value="selectionner" selected="selected">-- Sélectionner --</option>
+                        <option value="">-- Sélectionner --</option>
                         <option value="canada">Canada</option>
                         <option value="etatsunis">États-Unis</option>
                     </select>
                 </p>
-                <p class="contact_champ-erreur-pays"></p>
+                <p class="champ-erreur"></p>
                 <p>
                     <p>
                         <label for="province_etat">Province ou État</label>
                     </p>                   
                     <select name="province_etat" id="province_etat" required>
-                        <option value="selectionner" selected="selected">-- Sélectionner --</option>
+                        <option value="">-- Sélectionner --</option>
                         <optgroup label="Canada">
                         <option value="quebec">Québec</option>
                         </optgroup>
@@ -90,14 +90,14 @@
                         </optgroup>
                     </select>                    
                 </p>
-                <p class="contact_champ-erreur-province-etat"></p>
+                <p class="champ-erreur"></p>
                 <p>
                     <p>
                         <label for="code_postal">Code postal (A1A 1A1)</label>
                     </p>                    
                     <input type="text" id="code_postal" name="code_postal" required>
                 </p>
-                <p class="contact_champ-erreur-code-postal"></p>
+                <p class="champ-erreur"></p>
             </fieldset>
             <p>
                 <input type="checkbox" id="recevoir_courriel" name="recevoir_courriel">

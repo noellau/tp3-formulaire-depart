@@ -29,28 +29,32 @@
                 <legend class="contact__legende">Informations de contact</legend>
                 <p>
                     <label for="prenom">Prénom</label>
-                </p>
+                </p>               
                 <p>
                     <input type="text" id="prenom" name="prenom" required>
                 </p>   
+                <p class="contact_champ-erreur-prenom"></p>
                 <p> 
                     <label for="nom">Nom</label>       
                 </p>
                 <p>
                     <input type="text" id="nom" name="nom">
                 </p>
+                <p class="contact_champ-erreur-nom"></p>
                 <p>
                     <label for="courriel">Courriel (exemple@domaine.com)</label>
                 </p>
                 <p>
                     <input type="email" id="courriel" name="courriel" required>
                 </p>
+                <p class="contact_champ-erreur-courriel"></p>
                 <p>
                     <label for="telephone">Téléphone (514 555 0123)</label>   
                 </p>
                 <p>
                     <input type="tel" id="telephone" name="telephone">
                 </p>
+                <p class="contact_champ-erreur-telephone"></p>
             </fieldset>
             <fieldset class="form__postale">
                 <legend class="postale__legende">Informatioins postales</legend>
@@ -60,6 +64,7 @@
                 <p>
                     <input type="text" id="adresse" name="adresse" required>
                 </p>
+                <p class="contact_champ-erreur-adresse"></p>
                 <p>
                     <p>
                         <label for="pays">Pays</label>
@@ -70,6 +75,7 @@
                         <option value="etatsunis">États-Unis</option>
                     </select>
                 </p>
+                <p class="contact_champ-erreur-pays"></p>
                 <p>
                     <p>
                         <label for="province_etat">Province ou État</label>
@@ -84,12 +90,14 @@
                         </optgroup>
                     </select>                    
                 </p>
+                <p class="contact_champ-erreur-province-etat"></p>
                 <p>
                     <p>
                         <label for="code_postal">Code postal (A1A 1A1)</label>
                     </p>                    
                     <input type="text" id="code_postal" name="code_postal" required>
                 </p>
+                <p class="contact_champ-erreur-code-postal"></p>
             </fieldset>
             <p>
                 <input type="checkbox" id="recevoir_courriel" name="recevoir_courriel">

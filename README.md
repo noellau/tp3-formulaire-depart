@@ -19,11 +19,13 @@ E = 55 % (lacunes majeures)
 
 ### HTML (5 points)
 
-- [ ] **Balises structurelles et sémantiques** — Page avec `header`, `main`, `footer`. Bon choix du type d'input (ex. `type="email"` pour le courriel).
-- [ ] **Code HTML valide** — Capture d'écran avant/après ou juste après validation pour prouver qu'il n'y a aucune erreur (les avertissements ne comptent pas).
-- [ ] **Regroupements et étiquetage** — `fieldset` pour grouper, `legend` pour étiqueter. `label` relié au `input` par `for`/`id`. Images avec `alt` documenté.
-- [ ] **Contraintes de saisie** — Utilisation de `required`, `pattern` et `title`.
-- [ ] **Conteneurs de validation** — Prévoir des balises `p.erreur` pour recevoir les messages d'erreur ou d'encouragement de la validation JavaScript. Ces balises doivent avoir un parent ou ancêtre commun (avec la classe `.ctnValidation`) avec l'élément ou les éléments de formulaire à valider.
+- [x] **Balises structurelles et sémantiques** — Page avec `header`, `main`, `footer`. Bon choix du type d'input (ex. `type="email"` pour le courriel).
+- [x] **Code HTML valide** — Capture d'écran avant/après ou juste après validation pour prouver qu'il n'y a aucune erreur (les avertissements ne comptent pas).
+- [x] **Regroupements et étiquetage** — `fieldset` pour grouper, `legend` pour étiqueter. `label` relié au `input` par `for`/`id`. Images avec `alt` documenté.
+- [x] **Contraintes de saisie** — Utilisation de `required`, `pattern` et `title`.
+- [x] **Conteneurs de validation** — Prévoir des balises `p.erreur` pour recevoir les messages d'erreur ou d'encouragement de la validation JavaScript. Ces balises doivent avoir un parent ou ancêtre commun (avec la classe `.ctnValidation`) avec l'élément ou les éléments de formulaire à valider.
+
+<img src="images/capture_w3c.png">
 
 Exemple pour le cas d'un seul élément :
 

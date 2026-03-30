@@ -36,8 +36,26 @@
 :root {
     /* Couleurs */
     --couleur-primaire: rgb(163, 0, 0);
+        /* 
+        Premier plan: blanc
+        Arriere-plan: couleur-primaire
+        Ratio contrast: 8.21:1
+        WCAG AAA/AA pour tout
+        */
     --couleur-secondaire: rgb(218, 247, 202);
+        /* 
+        Premier plan: couleur-secondaire
+        Arriere-plan: couleur-primaire
+        Ratio contrast: 7.09:1
+        WCAG AAA/AA pour tout
+        */    
     --couleur-tertiaire: rgb(255, 210, 201);
+        /* 
+        Premier plan: noir
+        Arriere-plan: couleur-tertiare
+        Ratio contrast: 15.31:1
+        WCAG AAA/AA pour tout
+        */        
 }
 
 /* ------- Styles de base ------- */

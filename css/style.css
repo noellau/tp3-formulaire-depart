@@ -26,7 +26,7 @@
 /* ------- Variables ------- */
 :root {
     /* Couleurs */
-    --couleur-primaire: ?;
+    --couleur-primaire: rgb(237, 111, 0);
     --couleur-secondaire: ?;
     --couleur-tertiaire: ?;
 }
@@ -53,6 +53,13 @@ html {
 /*** Fluidifier les images ***/
 img {
     max-width: 100%;
+}
+
+/*** ***/
+.contact__legende,
+.postale__legende,
+.format__legende{
+    text-transform: uppercase;
 }
 
 /* ------- Accessibilité ------- */

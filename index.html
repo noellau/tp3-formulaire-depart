@@ -3,10 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link type="text/css" rel="stylesheet" href="css/normalize.css">
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+        
         <title>Commander une brochure gratuite</title>
     </head>
     <body>
         <header>
+            <a href="#main" class="screen-reader-only focusable">Aller au contenu</a>
             <h2 class="sous_titre">Publication gratuite</h2>
             <h1 class="titre_principale">Commander une <i>brochure</i> gratuite</h1>
         </header>
@@ -34,14 +39,14 @@
                 <p>
                     <label for="prenom">Prénom</label>
                 <p>
-                    <input type="text" id="prenom" name="prenom" required>
+                    <input type="text" id="prenom" name="prenom" autocomplete="given-name" required>
                 </p>   
                 <p class="champ-erreur"></p>
                 <p> 
                     <label for="nom">Nom</label>       
                 </p>
                 <p>
-                    <input type="text" id="nom" name="nom">
+                    <input type="text" id="nom" name="nom" autocomplete="family-name">
                 </p>
                 <p class="champ-erreur"></p>
                 <p>

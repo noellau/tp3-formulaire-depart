@@ -16,6 +16,8 @@
  * Styles de base
  * Accessibilité
  * Validations
+ * Header
+ * Legendes
  *
  */
 
@@ -26,8 +28,8 @@
 /* ------- Variables ------- */
 :root {
     /* Couleurs */
-    --couleur-primaire: rgb(237, 111, 0);
-    --couleur-secondaire: ?;
+    --couleur-primaire: rgb(255, 119, 0);
+    --couleur-secondaire: rgb(1, 0, 82);
     --couleur-tertiaire: ?;
 }
 
@@ -55,12 +57,7 @@ img {
     max-width: 100%;
 }
 
-/*** ***/
-.contact__legende,
-.postale__legende,
-.format__legende{
-    text-transform: uppercase;
-}
+
 
 /* ------- Accessibilité ------- */
 
@@ -107,4 +104,24 @@ img {
 }
 .icone--erreur {
     background-position: 99px 0;
+}
+
+/* ------- Header ------- */
+.sous_titre{
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+i{
+    color: var(--couleur-secondaire);
+}
+header{
+    height: 250px;
+    background-color: var(--couleur-primaire);
+}
+
+/* ------- Legendes ------- */
+.contact__legende,
+.postale__legende,
+.format__legende{
+    text-transform: uppercase;
 }

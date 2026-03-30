@@ -18,6 +18,7 @@
  * Validations
  * Header
  * Legendes
+ * Icones
  *
  */
 
@@ -28,8 +29,8 @@
 /* ------- Variables ------- */
 :root {
     /* Couleurs */
-    --couleur-primaire: rgb(255, 119, 0);
-    --couleur-secondaire: rgb(1, 0, 82);
+    --couleur-primaire: rgb(163, 0, 0);
+    --couleur-secondaire: rgb(218, 247, 202);
     --couleur-tertiaire: ?;
 }
 
@@ -107,9 +108,14 @@ img {
 }
 
 /* ------- Header ------- */
+.titre_principale{
+    color: white;
+}
+
 .sous_titre{
     text-transform: uppercase;
     font-size: 0.8em;
+    color: white;
 }
 i{
     color: var(--couleur-secondaire);
@@ -124,4 +130,13 @@ header{
 .postale__legende,
 .format__legende{
     text-transform: uppercase;
+}
+
+/* ------- Icones ------- */
+.format__icone,
+.contact__icone,
+.postale__icone{
+    background-color: var(--couleur-primaire);
+    height: 30px;
+    border-radius: 5px;
 }

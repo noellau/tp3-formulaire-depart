@@ -21,6 +21,10 @@
  * Legendes
  * Icones
  * Formulaire
+ * Legendes
+ * Icones
+ * Checkbox
+ * Bouton
  *
  */
 
@@ -143,11 +147,13 @@ form {
     border-radius: 10px;
     background-color: white;
 }
+fieldset{
+    border: none;
+}
 
 /* ------- Legendes ------- */
-.contact__legende,
-.postale__legende,
-.format__legende{
+span{
+    padding-left: 10px;
     text-transform: uppercase;
 }
 
@@ -176,6 +182,9 @@ form {
 }
 
 /* ------- Bouton ------- */
+li{
+    list-style: none;
+}
 .conteneur_btn{
     display: flex; 
     justify-content: right;

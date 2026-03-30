@@ -16,9 +16,11 @@
  * Styles de base
  * Accessibilité
  * Validations
+ * Body
  * Header
  * Legendes
  * Icones
+ * Formulaire
  *
  */
 
@@ -31,7 +33,7 @@
     /* Couleurs */
     --couleur-primaire: rgb(163, 0, 0);
     --couleur-secondaire: rgb(218, 247, 202);
-    --couleur-tertiaire: ?;
+    --couleur-tertiaire: rgb(255, 210, 201);
 }
 
 /* ------- Styles de base ------- */
@@ -107,28 +109,45 @@ img {
     background-position: 99px 0;
 }
 
+/* ------- Body ------- */
+body{
+    background-color: var(--couleur-tertiaire);
+}
+
 /* ------- Header ------- */
 .titre_principale{
     color: white;
+    padding-bottom: 50px;
 }
-
 .sous_titre{
+    padding-top: 150px;
     text-transform: uppercase;
     font-size: 0.8em;
     color: white;
+    font-family: 'DM Sans', sans-serif;
 }
 i{
     color: var(--couleur-secondaire);
 }
 header{
-    height: 250px;
+    height: auto;
     background-color: var(--couleur-primaire);
+}
+
+/* ------- Formulaire ------- */
+form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
 }
 
 /* ------- Legendes ------- */
 .contact__legende,
 .postale__legende,
 .format__legende{
+    font-family: 'DM Sans', sans-serif;    
     text-transform: uppercase;
 }
 
@@ -139,4 +158,20 @@ header{
     background-color: var(--couleur-primaire);
     height: 30px;
     border-radius: 5px;
+}
+.btnCommander__icone{
+    height: 15px;
+}
+
+/* ------- Bouton ------- */
+.conteneur_btn{
+    display: flex; 
+    justify-content: right;
+}
+.btnCommander{
+    color: white;
+    background-color: var(--couleur-primaire);
+    border-radius: 10px;
+    border: none;
+    padding: 10px 40px;
 }
